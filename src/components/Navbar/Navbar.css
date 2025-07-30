@@ -1,0 +1,78 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* very small gap */
+  /* remove margin-left to avoid weird shifting */
+}
+
+.logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  margin: -100px; /* no margin */
+}
+
+.site-name {
+  color: blue; /* Tailwind color */
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+    margin-left: -60px; /* no margin */
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px; 
+  color: black;
+  font-size: 18px;
+  font-weight: semi-bold;
+  cursor: pointer;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+.navbarbutton{
+    background: transparent;
+    font-size:16px;
+    color:gray;
+    border: 3px solid gray;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.navbar button:hover{
+   background-color: white;
+}
+.navbar-menu li.active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  color: black;
+}
+.navbar-menu li {
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.navbar-search-icon {
+  position: relative;
+}
+.navbar-search-icon .dot {
+  position:absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: red;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
