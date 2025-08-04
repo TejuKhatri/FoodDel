@@ -13,10 +13,12 @@
 }
 
 .logo {
-  height: 52px;
+  height: 72px;
   width: auto;
   object-fit: contain;
-  margin: -100px; /* no margin */
+  margin: -120px; /* no margin */
+   vertical-align: middle;
+
 }
 
 .site-name {
@@ -40,12 +42,12 @@
   align-items: center;
   gap: 40px; 
 }
-.navbarbutton{
+.navbar button{
     background: transparent;
     font-size:16px;
     color:gray;
-    border: 3px solid gray;
-    padding: 10px 30px;
+    border: 2px solid gray;
+    padding: 7px 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -75,4 +77,77 @@
   border-radius: 5px;
   top: -8px;
   right: -8px;
+}
+@media (max-width:1050px) {
+    .navbar .logo {
+        width: 140px;
+        padding-left: 50px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+@media (max-width:900px) {
+    .navbar .logo {
+        width: 120px;
+        padding-left: 50px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:750px) {
+    .navbar-menu {
+        display: none;
+    }
+   @media (max-width: 750px) {
+  .site-name {
+    display: none;
+  }
+}
+
+@media (min-width: 751px) {
+  .site-name {
+    display: inline-block;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    height: 52px;
+    padding-left: 50px;
+  }
+
+  .navbar {
+    padding: 30px;
+  }
+}
 }
