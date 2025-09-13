@@ -71,7 +71,7 @@ const Cart = () => {
            <button onClick={()=>navigate('/order')}>Proceed to checkout</button>
         </div>
           <div className='cart-promocode'>
-            <div> If you have a promo code, enter it here.</div>
+            <div> If you have a promo code, enter it here to apply.</div>
             <div className='cart-promocode-input'>
               <input type=' text' placeholder='promo code'/>
               <button>Submit</button>
